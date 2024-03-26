@@ -61,59 +61,11 @@
 
                     <!-- Kitchenware here -->
                     <h3 class="text-4xl font-semibold mb-6">Kitchenware</h3>
-                    <div class="flex flex-cols-3 gap-4">
-                        <!-- first card: -->
-                        <div class="card w-80 h-96 bg-base-100 shadow-2xl shadow--200">
-                            <figure class="bg-gray-200 m-6 w-auto h-56 rounded-lg "><img src="images/prod1.png"
-                                    alt="prod1" /></figure>
-                            <div class="card-body text-center mb-4">
-                                <div class="text-center text-xl mb-2">
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                </div>
-                                <p class="text-2xl font-semibold">K. Accessories</p>
-                                <h4 class="text-gray-500">39.00 TK</h4>
+                    <div id="product_list_1" class="flex flex-cols-3 gap-4">
 
-                            </div>
-                        </div>
-                        <!-- Second  card: -->
-                        <div class="card w-80 h-96 bg-base-100 shadow-2xl shadow--200">
-                            <figure class="bg-gray-200 m-6 w-auto h-56 rounded-lg "><img src="images/prod2.png"
-                                    alt="prod1" /></figure>
-                            <div class="card-body text-center mb-4">
-                                <div class="text-center text-xl mb-2">
 
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                </div>
-                                <p class="text-2xl font-semibold">K. Accessories</p>
-                                <h4 class="text-gray-500">25.00 TK</h4>
 
-                            </div>
-                        </div>
-                        <!-- Third card: -->
-                        <div class="card w-80 h-96 bg-base-100 shadow-2xl shadow--200">
-                            <figure class="bg-gray-200 m-6 w-auto h-56 rounded-lg "><img src="images/prod3.png"
-                                    alt="prod1" /></figure>
-                            <div class="card-body text-center mb-4">
-                                <div class="text-center text-xl mb-2">
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-solid fa-star text-orange-400"></i>
-                                    <i class="fa-regular fa-star text-orange-400"></i>
-                                </div>
-                                <p class="text-2xl font-semibold">Home Cooker</p>
-                                <h4 class="text-gray-500">49.00 TK</h4>
 
-                            </div>
-                        </div>
                     </div>
                     <!-- Sportswear here -->
                     <h3 class="text-4xl font-semibold mb-6">Sportswear</h3>
@@ -233,7 +185,7 @@
 
                 </div>
                 <!-- right part here -->
-                <div class="p-10 mt-14 ">
+                <div class="p-10 mt-14">
                     <!-- have a coupon here -->
                     <div>
                         <h4>Have coupon?</h4>
@@ -255,10 +207,12 @@
 
                     <!-- make purchase start here -->
                     <div class="mt-10">
-                        <h4 class="text-xl">Total Price: <span></span></h4>
-                        <h4 class="text-xl">Discount: <span></span></h4>
-                        <h4 class="text-xl">Total: <span></span></h4>
-
+                        <h4 class="text-xl">Total Price: <span id="totalPrice"></span></h4>
+                        <h4 class="text-xl">Discount: <span id="discount"></span></h4>
+                        <h4 class="text-xl">Total: <span id="total"></span></h4>
+                    </div>
+                    <div>
+                        <button id="purchase-btn" class="bg-pink-600 border-2 rounded-lg w-40 h-12 text-white">Make Purchase</button>
                     </div>
 
 
@@ -275,6 +229,9 @@
         </section>
 
     </main>
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
